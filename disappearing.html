@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script defer src="disappearing.js"></script>
+    <title>Disappearing</title>
+    <style>
+        .img {
+            margin: 40px 5px 0px 5px;
+            width: 200px;
+            height: 200px;
+        }
+
+        #button {
+            margin-top: 50px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>jQuery - assignment 1</h1>
+        <img class="img" src="https://lh3.googleusercontent.com/proxy/ssQR2H9L5_KgJLXrgxKZu0boYEFSgNVsI9-R-XNbesL_9dufXuH48SLW9BfYk52ZNibDD0JX2YYxBlFlO-atKaGPoerT-KH2W5oJkmUy3eZdx1ycGHqUf-D8YHZ7ArNONT5DHrtQ7AaG9NgLxJ5kvAHXr3d6Ip9hUAQ5g3DqyMF6XuQKRkHoW73VvVdMU1gfUZnXKycrDdYK">
+        <img class="img" src="https://lh3.googleusercontent.com/proxy/ssQR2H9L5_KgJLXrgxKZu0boYEFSgNVsI9-R-XNbesL_9dufXuH48SLW9BfYk52ZNibDD0JX2YYxBlFlO-atKaGPoerT-KH2W5oJkmUy3eZdx1ycGHqUf-D8YHZ7ArNONT5DHrtQ7AaG9NgLxJ5kvAHXr3d6Ip9hUAQ5g3DqyMF6XuQKRkHoW73VvVdMU1gfUZnXKycrDdYK">
+        <img class="img" src="https://lh3.googleusercontent.com/proxy/ssQR2H9L5_KgJLXrgxKZu0boYEFSgNVsI9-R-XNbesL_9dufXuH48SLW9BfYk52ZNibDD0JX2YYxBlFlO-atKaGPoerT-KH2W5oJkmUy3eZdx1ycGHqUf-D8YHZ7ArNONT5DHrtQ7AaG9NgLxJ5kvAHXr3d6Ip9hUAQ5g3DqyMF6XuQKRkHoW73VvVdMU1gfUZnXKycrDdYK">
+        <img class="img" src="https://lh3.googleusercontent.com/proxy/ssQR2H9L5_KgJLXrgxKZu0boYEFSgNVsI9-R-XNbesL_9dufXuH48SLW9BfYk52ZNibDD0JX2YYxBlFlO-atKaGPoerT-KH2W5oJkmUy3eZdx1ycGHqUf-D8YHZ7ArNONT5DHrtQ7AaG9NgLxJ5kvAHXr3d6Ip9hUAQ5g3DqyMF6XuQKRkHoW73VvVdMU1gfUZnXKycrDdYK">
+        <img class="img" src="https://lh3.googleusercontent.com/proxy/ssQR2H9L5_KgJLXrgxKZu0boYEFSgNVsI9-R-XNbesL_9dufXuH48SLW9BfYk52ZNibDD0JX2YYxBlFlO-atKaGPoerT-KH2W5oJkmUy3eZdx1ycGHqUf-D8YHZ7ArNONT5DHrtQ7AaG9NgLxJ5kvAHXr3d6Ip9hUAQ5g3DqyMF6XuQKRkHoW73VvVdMU1gfUZnXKycrDdYK">
+        <img class="img" src="https://lh3.googleusercontent.com/proxy/ssQR2H9L5_KgJLXrgxKZu0boYEFSgNVsI9-R-XNbesL_9dufXuH48SLW9BfYk52ZNibDD0JX2YYxBlFlO-atKaGPoerT-KH2W5oJkmUy3eZdx1ycGHqUf-D8YHZ7ArNONT5DHrtQ7AaG9NgLxJ5kvAHXr3d6Ip9hUAQ5g3DqyMF6XuQKRkHoW73VvVdMU1gfUZnXKycrDdYK">
+        <img class="img" src="https://lh3.googleusercontent.com/proxy/ssQR2H9L5_KgJLXrgxKZu0boYEFSgNVsI9-R-XNbesL_9dufXuH48SLW9BfYk52ZNibDD0JX2YYxBlFlO-atKaGPoerT-KH2W5oJkmUy3eZdx1ycGHqUf-D8YHZ7ArNONT5DHrtQ7AaG9NgLxJ5kvAHXr3d6Ip9hUAQ5g3DqyMF6XuQKRkHoW73VvVdMU1gfUZnXKycrDdYK">
+        <img class="img" src="https://lh3.googleusercontent.com/proxy/ssQR2H9L5_KgJLXrgxKZu0boYEFSgNVsI9-R-XNbesL_9dufXuH48SLW9BfYk52ZNibDD0JX2YYxBlFlO-atKaGPoerT-KH2W5oJkmUy3eZdx1ycGHqUf-D8YHZ7ArNONT5DHrtQ7AaG9NgLxJ5kvAHXr3d6Ip9hUAQ5g3DqyMF6XuQKRkHoW73VvVdMU1gfUZnXKycrDdYK">
+        
+        <div id="button">
+        <button class="btn btn-lg btn-primary">Restore</button>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="jquery.js"></script>
+    <title>Document</title>
+
+    <script>
+        $(document).ready( function() { // when document is ready run the function
+
+            // $('h1').hover( function() {
+            //     $('li').text("look at this!");
+            // });
+
+            $('.link').click( function () {
+                $('p').css('background-color', 'skyblue');
+            });
+
+            // $('.btn').click( function () {
+            //     $('.result').append('<h1>This is AMAZING! </h1>');
+            // });
+
+            // //Getter
+            // $('.btn').click( function() {
+            //     let msg = $('p').text();
+            //     alert(msg);
+            // })
+
+            // //Setter
+            // $('.btn').click( function () {
+            //     let msg = $('h1').text("How's the coding experice so far?");
+            // })
+
+            $('a').hide();
+
+            //fadeIn
+            $('.btn').click( function () {
+                $('a').fadeIn('slow');
+            });
+         });
+
+
+    </script>
+</head>
+<body>
+
+<h1>Hello This is jQuery Practice</h1>
+<p>I am really excited about this!</p>
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Javascript</li>
+    <li>jQuery</li>
+</ul>
+<a href="#" class="link">This is the link!</a>
+<br/><br/>
+<button class="btn">Click Me! Fade In</button>
+
+<div class="result"></div>
+
+</body>
+</html>

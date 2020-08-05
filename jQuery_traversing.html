@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(function() {
+            
+            // $('h3, p').click(function() {
+            //     $(this).parent().css('backgroundColor', 'skyblue');
+            // })
+
+            // $('h3, p').click(function() {
+            //     $(this).parent().append('<h1>Hello You Did it!</h1>')
+            // })
+
+            $('h3, p').click(function() {
+                $(this).siblings().hide();
+            })
+
+            $('button').click(function(){
+                $(this).siblings().children().children().text("Wow Amazing")
+            })
+
+            // $('#myDiv').children().css('background-color','pink');
+            $('#myDiv').children('h3').css('backgroundColor', 'pink');
+
+
+        });
+    
+    </script>
+</head>
+
+<body>
+    <div>
+        <div id="myDiv">
+            <p>Here is a paragraph</p>
+            <h3>Sean Choi</h3>
+            <h3>John</h3>
+            <h3>Hello World</h3>
+        </div>
+
+        <button>Click me!</button>
+            <ul>
+                <li><h3>Sean The Best</h3></li>
+                <li><h3>Yoori is my Love</h3></li>
+                <li><h3>Whoelse will be my love?</h3></li>
+            </ul>
+        
+    </div>
+</body>
+</html>

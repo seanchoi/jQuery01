@@ -1,0 +1,15 @@
+button, h1 {
+    display: inline-block;
+    margin-right: 50px;
+    min-width:150px;
+}
+
+p {
+    margin-left:205px;
+}
+
+.container {
+    border-bottom: 3px solid black;
+    box-sizing: border-box;
+    padding: 20px;
+}
